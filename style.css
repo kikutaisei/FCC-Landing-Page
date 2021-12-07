@@ -1,0 +1,259 @@
+/* Base font size */
+html, body{
+    font-size: 10px;
+}
+
+/* Default styling */
+body{
+    background-color: #ECF0F1;
+    font-family: Oxygen, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header flexbox containing logo and nav bar */
+#header{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+}
+
+/* Logo styling */
+#header-img{
+    height: 35px;
+    margin: 0;
+}
+
+/* Nav bar flexbox containing links */
+#nav-bar{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Link styling when not visited */
+#nav-bar a:link{
+    text-decoration: none;
+    color: #FF0000;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+/* Link styling when hovering */
+#nav-bar a:hover{
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+/* Main wrapper containing other elements */
+main{
+    width: 100%;
+    margin: 100px auto auto auto;
+}
+
+/* Home flexbox containing title and video containers */
+#home{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+/* Title container within home container */
+#home-title{
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* H1 title within title container */
+#home-title h1{
+    font-size: 4rem;
+    color: #FF0000;
+    margin: 10px 0;
+}
+
+/* P subtitle within title container */
+#home-title p{
+    font-size: 2rem;
+    color: #0027FF;
+    margin: 10px 0;
+}
+
+/* Image within title container */
+#home-img{
+    width: 350px;
+    margin: 10px 0;
+}
+
+/* Video container within home container */
+#home-video{
+    margin: 30px 0;
+}
+
+/* Video within video container */
+#video{
+    border: 5px solid #FF0000;
+    border-radius: 10px;
+}
+
+/* Modes containing sub-containers */
+#modes{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2C3E50;
+    margin: 40px 0;
+}
+
+/* Sub-container containing different mode containers */
+#modes-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+
+/* Mode containers containing image and description */
+#modes-tv, #modes-table, #modes-hand{
+    font-size: 1.2rem;
+    width: 80%;
+    height: 280px;
+    margin: auto;
+    border: 5px solid #FF0000;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+/* Image within mode container */
+#modes-tv img, #modes-table img, #modes-hand img{
+    width: 90%;
+}
+
+/* Models containing sub-containers */
+#models{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2C3E50;
+    margin: 40px 0;
+}
+
+/* Sub-container containing different model containers */
+#models-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+
+/* Model containers containing image and description */
+#models-neon, #models-grey, #models-mario, #models-ac, #models-odyssey, #models-minecraft{
+    font-size: 1.2rem;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    border: 5px solid #FF0000;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+/* Image within model container */
+#models-neon img, #models-grey img, #models-mario img, #models-ac img, #models-odyssey img, #models-minecraft img{
+    width: 90%;
+}
+
+/* Survey containing form */
+#survey{
+    margin: 40px 0;
+    font-size: 1.5rem;
+    color: #0027FF;
+    text-align: center;
+}
+
+/* Email text field */
+#email{
+    margin: 15px 0;
+    padding: 5px;
+    width: 70%;
+    border: 3px solid #2C3E50;
+    border-radius: 3px;
+}
+
+/* Submit button */
+#submit{
+    background-color: #FF0000;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 3px solid #2C3E50;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* Screens with minimum width of 1000px only */
+@media only screen and (min-width: 1000px){
+    #nav-bar a:link{
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
+    main{
+        width: 80%;
+    }
+
+    #home{
+        margin: 0;
+    }
+
+    #home-video{
+        margin: 80px 0;
+    }
+
+    #modes-div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #modes-tv, #modes-table, #modes-hand{
+        width: 80%;
+        height: 220px;
+        margin: auto;
+    }
+
+    #models-div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #models-neon, #models-grey, #models-mario, #models-ac, #models-odyssey, #models-minecraft{
+        width: 80%;
+        height: 200px;
+        margin: auto;
+    }
+
+    #email{
+        width: 50%;
+    }
+}
+
+/* Screens with minimum width of 1300px only */
+@media only screen and (min-width: 1300px){
+    #header-img{
+        height: 50px;
+        margin: 0;
+    }
+
+    #nav-bar a:link{
+        font-size: 2rem;
+        padding: 10px 25px;
+    }
+
+    #modes-tv, #modes-table, #modes-hand{
+        width: 80%;
+        height: 280px;
+        margin: auto;
+    }
+
+    #models-neon, #models-grey, #models-mario, #models-ac, #models-odyssey, #models-minecraft{
+        width: 80%;
+        height: 250px;
+        margin: auto;
+    }
+}
